@@ -29,8 +29,7 @@ final class EventViewController: UIViewController {
         print(currentFavState, eventIndex)
         favLabel.setTitle("❤︎", forState: .Normal)
         favLabel.setTitleColor(favStateHelper(), forState: .Normal)
-        favLabel.setNeedsLayout()
-        
+
         rsvpCountLabel.text = eventDetail.flatMap{ x in
             return String(format: "☺︎  %d %@ are going",x.yes_rsvp_count, x.who)
         }
@@ -43,7 +42,7 @@ final class EventViewController: UIViewController {
         }
     }
     
-    @IBAction func favStateButtonAction(_sender: AnyObject) {
+    @IBAction func toggleFavStateButtonAction(_sender: AnyObject) {
         print("selected")
         favState = !favState
         eventList[eventIndex].fav = favState
