@@ -26,7 +26,7 @@ extension Event {
             groupName = dictionary["group"]!["name"] as? String,
             time = dictionary["time"] as? NSNumber,
             city = dictionary["venue"]!["city"] as? String,
-            who = dictionary["group"]!["who"] as? String else { return nil}
+            who = dictionary["group"]!["who"] as? String else { return nil }
         self.name = name
         self.yes_rsvp_count = yes_rsvp_count
         self.groupName = groupName
@@ -41,6 +41,7 @@ struct Resource<A> {
     let url: NSURL
     let parse: (NSData) -> A?
 }
+
 extension Resource {
     init(url: NSURL, parseJson: AnyObject -> A?) {
         self.url = url
