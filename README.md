@@ -1,8 +1,9 @@
-####Meetup Events pulling from your device’s location. 
+####Meetup Events pulling from your device’s location. :bike:
 
 <img src = "https://github.com/guangLess/pullMeetupNearYourDevice/blob/master/screenShot/guang-appwalkthrough-ny2.gif" width = 200">
 <img src = "https://github.com/guangLess/pullMeetupNearYourDevice/blob/master/screenShot/screenShot_1.png" width = "200">
 <img src = "https://github.com/guangLess/pullMeetupNearYourDevice/blob/master/screenShot/screenShot_2.png" width = "200">
+
 If location in simulator is **not set up**, the default location is New York. 
 The api key in this repo is **free** to use.
 
