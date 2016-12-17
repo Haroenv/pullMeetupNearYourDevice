@@ -2,6 +2,8 @@
 If location in simulator is **not set up**, the default location is New York. 
 The api key in this repo is **free** to use.
 <img src = "https://github.com/guangLess/pullMeetupNearYourDevice/blob/master/screenShot/guang-appwalkthrough-ny2.gif" width = 200">
+<img src = "https://github.com/guangLess/pullMeetupNearYourDevice/blob/master/screenShot/screenShot_1.png" width = "200">
+<img src = "https://github.com/guangLess/pullMeetupNearYourDevice/blob/master/screenShot/screenShot_2.png" width = "200">
 
 **Summery** : The app requests device location, then uses the location coordinates to request Meetup's open api /2/open_events with the user’s latitude/longitude. It displays 10 events ordered by distance to the user on a table view, and shows the relevant city name at the top of the screen. Tapping into each event shows the details of the event along with a favorite button than can be toggled (and remembers changes).
 
@@ -27,6 +29,5 @@ class **Location** conforms to **CLLocationmanagerDelegate**. It requests device
 **eventList** Array is a global variable that stores the events. It’s not the best practice for a real app, however I needed it to be global in order to save the favorite states from EventViewController.
 
 
-<img src = "https://github.com/guangLess/pullMeetupNearYourDevice/blob/master/screenShot/screenShot_1.png" width = "200">
-<img src = "https://github.com/guangLess/pullMeetupNearYourDevice/blob/master/screenShot/screenShot_2.png" width = "200">
+
 
